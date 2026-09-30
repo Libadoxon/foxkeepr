@@ -1,5 +1,5 @@
 {
-  description = "Small user service to move firefox windows to right workspace on hyperland";
+  description = "Small user service to move firefox windows to right workspace on hyprland";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -59,7 +59,7 @@
           commonArgs
           // {
             inherit cargoArtifacts;
-            meta.description = "Small user service to move firefox windows to right workspace on hyperland";
+            meta.description = "Small user service to move firefox windows to right workspace on hyprland";
           }
         );
 
