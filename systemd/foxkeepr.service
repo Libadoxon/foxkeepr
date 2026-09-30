@@ -1,0 +1,14 @@
+[Unit]
+Description=Keep Firefox windows on their Hyprland workspaces
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+# Adjust to wherever the binary landed.
+ExecStart=%h/.nix-profile/bin/foxkeepr run
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=hyprland-session.target
